@@ -12,7 +12,7 @@ public class Main {
         dog.speak();
 
         CatFactory catFactory = new CatFactory();
-        Mammal cat = catFactory.createCat();
+        Mammal cat = catFactory.createAnimalType();
         cat.speak();
 
     }

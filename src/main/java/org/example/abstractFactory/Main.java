@@ -1,16 +1,21 @@
 package org.example.abstractFactory;
 
+import org.example.abstractFactory.entities.Mammal;
+import org.example.abstractFactory.entities.Reptile;
+
 public class Main {
     public static void main(String[] args) {
 
         //abstract factory method
 
-        AnimalFactory animalFactory = new AnimalFactory();
+        MammalFactory mammalFactory = new CatFactory();
+        Mammal animalOfMammalType =
+                mammalFactory.createAnimalOfMammalType();
+        animalOfMammalType.speak();
 
-        MammalFactory mammal = animalFactory.createMammal();
-        mammal.createCat().speak();
+        ReptileFactory reptileFactory = new SnakeFactory();
+        Reptile animalOfReptileType = reptileFactory.createAnimalOfReptileType();
+        animalOfReptileType.makeSound();
 
-        ReptileFactory reptile = animalFactory.createReptile();
-        reptile.createSnake().makeSound();
     }
 }

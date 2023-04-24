@@ -1,12 +1,13 @@
 package org.example.abstractFactory;
 
-import org.example.abstractFactory.entities.*;
+import org.example.abstractFactory.entities.Reptile;
 
-public class ReptileFactory {
-    public Reptile createSnake(){
-        return new Snake();
+public abstract class ReptileFactory {
+
+    public Reptile createAnimalOfReptileType(){
+        return createReptile();
     }
-    public Reptile createAlligator(){
-         return new Alligator();
-    }
+
+    public abstract Reptile createReptile();
+
 }

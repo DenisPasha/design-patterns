@@ -3,13 +3,8 @@ package org.example.abstractFactory;
 import org.example.abstractFactory.entities.Mammal;
 import org.example.abstractFactory.entities.Reptile;
 
-public  class AnimalFactory {
-    public MammalFactory createMammal(){
-        MammalFactory mammalFactory = new MammalFactory();
-        return mammalFactory;
-    }
+public abstract class AnimalFactory {
+    public abstract MammalFactory createMammal();
+    public abstract ReptileFactory createReptile();
 
-    public ReptileFactory createReptile(){
-        return new ReptileFactory();
-    }
 }

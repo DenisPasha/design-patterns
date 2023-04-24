@@ -4,7 +4,7 @@ import org.example.factory.entities.Mammal;
 
 public abstract class MammalFactory {
 
-   public Mammal createCat(){
+   public Mammal createAnimalType(){
      Mammal animal = createAnimal();
      return animal;
    }
