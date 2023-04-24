@@ -8,6 +8,7 @@ public class Main {
 
         //abstract factory method
 
+
         MammalFactory mammalFactory = new CatFactory();
         Mammal animalOfMammalType =
                 mammalFactory.createAnimalOfMammalType();
