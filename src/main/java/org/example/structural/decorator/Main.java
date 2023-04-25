@@ -1,4 +1,4 @@
-package org.example.creational.decorator;
+package org.example.structural.decorator;
 
 public class Main {
     public static void main(String[] args) {

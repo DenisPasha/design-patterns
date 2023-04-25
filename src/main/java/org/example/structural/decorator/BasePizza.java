@@ -1,8 +1,10 @@
-package org.example.creational.decorator;
+package org.example.structural.decorator;
 
 public class BasePizza implements Pizza{
+
+
     @Override
     public String bake() {
-        return "base pizza ";
+        return "pizza ";
     }
 }

@@ -1,4 +1,4 @@
-package org.example.creational.decorator;
+package org.example.structural.decorator;
 
 public interface Pizza {
     String bake();
