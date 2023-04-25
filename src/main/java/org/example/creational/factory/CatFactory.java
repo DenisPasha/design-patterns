@@ -1,12 +1,8 @@
 package org.example.creational.factory;
 
-import org.example.creational.factory.entities.Mammal;
-import org.example.creational.factory.entities.Cat;
-
-public class CatFactory extends MammalFactory {
-
+public class CatFactory extends AnimalFactory{
     @Override
-    public Mammal createAnimal() {
+    public Animal createAnimalOfType() {
         return new Cat();
     }
 }

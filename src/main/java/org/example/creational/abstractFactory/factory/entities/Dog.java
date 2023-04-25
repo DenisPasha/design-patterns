@@ -1,4 +1,4 @@
-package org.example.creational.factory.entities;
+package org.example.creational.abstractFactory.factory.entities;
 
 public class Dog implements Mammal {
     @Override

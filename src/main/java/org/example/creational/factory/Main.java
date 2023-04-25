@@ -1,19 +1,14 @@
 package org.example.creational.factory;
 
-import org.example.creational.factory.entities.Mammal;
-
 public class Main {
     public static void main(String[] args) {
 
-        //factory pattern
+        // factory method
+        AnimalFactory factoryCat = new CatFactory();
+        Animal animalOfType = factoryCat.createAnimalOfType();
 
-        DogFactory dogFactory = new DogFactory();
-        Mammal dog = dogFactory.createAnimal();
-        dog.speak();
-
-        CatFactory catFactory = new CatFactory();
-        Mammal cat = catFactory.createAnimalType();
-        cat.speak();
+        AnimalFactory factoryDog = new DogFactory();
+        Animal animalOfType1 = factoryDog.createAnimalOfType();
 
     }
 }
