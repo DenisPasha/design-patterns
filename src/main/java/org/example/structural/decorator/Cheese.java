@@ -5,6 +5,7 @@ public class Cheese extends PizzaDecorator {
         super(pizza);
     }
 
+    @Override
     public String bake(){
         return pizza.bake() + addCheese();
     }

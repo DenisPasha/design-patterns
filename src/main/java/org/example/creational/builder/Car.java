@@ -65,7 +65,7 @@ public class Car {
         }
 
         public Car build(){
-         return  new Car(brand ,model ,kilometers ,steeringWheelSide ,transmission ,engine ,type, countOfOwners);
+         return new Car(brand ,model ,kilometers ,steeringWheelSide ,transmission ,engine ,type, countOfOwners);
         }
     }
 

@@ -3,22 +3,15 @@ package org.example.creational.prototype.shallow;
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
 
-        // Shallow copy
-        // copying the reference
-        BookShallow bookShallow = new BookShallow();
-        bookShallow.setId(1);
-        bookShallow.setName("book name");
-        bookShallow.setAuthor("book author");
+        // shallow copy driver object hashcode and clone object hashcode are same
+        // only reference to the real object is cloned
 
-        ShallowCopyBookShop bookShop = new ShallowCopyBookShop();
-        bookShop.getBookShallowList().add(bookShallow);
-        bookShallow.setId(31);
-        bookShallow.setAuthor("another author");
-        bookShallow.setName("another name");
+        Driver driver = new Driver("Denis");
 
-        bookShop.getBookShallowList().add(bookShallow);
+        Car car = new Car("Yaris" , "Toyota" ,driver);
+        Object clone = car.clone();
 
-
-
+        System.out.println(car.getDriver().hashCode());
+        System.out.println(driver.hashCode());
     }
 }
