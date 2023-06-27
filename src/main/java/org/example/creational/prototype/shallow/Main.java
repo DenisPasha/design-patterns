@@ -13,5 +13,8 @@ public class Main {
 
         System.out.println(car.getDriver().hashCode());
         System.out.println(driver.hashCode());
+
+        System.out.println();
+
     }
 }

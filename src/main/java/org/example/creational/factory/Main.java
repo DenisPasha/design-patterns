@@ -9,6 +9,6 @@ public class Main {
 
         AnimalFactory factoryDog = new DogFactory();
         Animal animalOfType1 = factoryDog.createAnimalOfType();
-
+        System.out.println();
     }
 }

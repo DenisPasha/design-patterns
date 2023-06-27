@@ -5,15 +5,15 @@ public class DogAdapter implements Cat {
 
     // composition
     // adapter
-    private Dog dog;
+    private Cat cat;
 
-    public DogAdapter(Dog dog) {
-        this.dog = dog;
+    public DogAdapter(Cat cat) {
+        this.cat = cat;
     }
 
     //adapt cat method to dog
     @Override
     public void makeCatSound() {
-        dog.makeDogSound();
+        cat.makeCatSound();
     }
 }

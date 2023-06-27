@@ -3,7 +3,6 @@ package org.example.creational.prototype.shallow;
 public class Car implements Cloneable{
     private String model;
     private String make;
-
     private Driver driver;
 
     public Car(String model, String make, Driver driver) {

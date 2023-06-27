@@ -1,7 +1,5 @@
 package org.example.creational.singlton;
 
-import org.example.training.creational.singlton.CarSingleton;
-
 public class Main {
     public static void main(String[] args) {
         // singleton instance of a car

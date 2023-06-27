@@ -1,5 +1,6 @@
 package org.example.behavioral.chainOfResponsibility;
 
+
 public abstract class PaymentHandler {
     protected PaymentHandler next;
 
