@@ -5,6 +5,7 @@ public abstract class Shape {
 
     // field color is a reference to independent color class
     // acts as a bridge
+    //composition
     private Color color;
 
     public Shape(Color color) {
