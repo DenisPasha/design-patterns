@@ -11,7 +11,8 @@ public class Main {
         System.out.println(phone.state.homeButton());
         // pressing the power button to switch the state to off
         System.out.println(phone.state.powerButton());
-        System.out.println("hello");
+
+        int a = 5;
     }
 }
   
