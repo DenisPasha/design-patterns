@@ -1,22 +1,22 @@
 package org.example.behavioral.visitor;
 
-import org.example.behavioral.visitor.impl.Cigars;
-import org.example.behavioral.visitor.impl.Milk;
-import org.example.behavioral.visitor.impl.Whisky;
+
+import org.example.behavioral.visitor.dto.Liquor;
+import org.example.behavioral.visitor.dto.Necessity;
+import org.example.behavioral.visitor.dto.Tobacco;
 
 public class Main {
     public static void main(String[] args) {
+        Visitor taxVisitor = new TaxVisitor();
 
-        TaxVisitor taxVisitor = new TaxVisitor();
-        Necessity milk = new Milk(1.90);
-        double milkSumAfterTax = taxVisitor.visit(milk);
+        Liquor whiskey = new Liquor(19.99);
+        Necessity milk = new Necessity(1.99);
+        Tobacco cigars = new Tobacco(15.99);
 
-        Liquor whiskey = new Whisky(21.99);
-        double whiskeySumAfterTax = taxVisitor.visit(whiskey);
-
-        Tobacco cigars = new Cigars(10.99);
-        double cigarsSumAfterTax = taxVisitor.visit(cigars);
-
+        double whiskeyAfterTax = whiskey.accept(taxVisitor);
+        double milkAfterTax = milk.accept(taxVisitor);
+        double cigarsAfterTax = cigars.accept(taxVisitor);
+        
 
     }
 }
