@@ -11,5 +11,7 @@ public class Main {
         int resultOfSubtraction = contextSub.doOperation(3, 2);
 
         System.out.println();
+        System.out.println();
+        System.out.println();
     }
 }
