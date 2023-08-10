@@ -15,6 +15,8 @@ public class Main {
         shop.addCustomer(customerNatasha);
 
 
+
+
         customerDenis.subscribeToAShop(shop);
         customerPesho.subscribeToAShop(shop);
         customerNatasha.subscribeToAShop(shop);
