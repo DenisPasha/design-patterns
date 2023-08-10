@@ -10,6 +10,7 @@ public class Main {
         Context contextSub = new Context(new Subtract());
         int resultOfSubtraction = contextSub.doOperation(3, 2);
 
-
+        System.out.println();
+        System.out.println();
     }
 }
