@@ -10,7 +10,5 @@ public class Main {
         logger.debug("Hello there mate");
         logger.error("Big problem here" , new Exception());
         logger.info("All good");
-        logger.info("All good");
-
     }
 }
